@@ -1,0 +1,350 @@
+PROJECT: ADVANCED AI PERSONAL WALLPAPER & TYPOGRAPHY STUDIO
+
+Professional AI Image Generation | Dual Reference Identity | Bengali & English Typography | Android Mobile-First
+
+1. PROJECT VISION
+
+Upgrade the existing AI Android Wallpaper Generator into a premium, professional AI Image Generation Studio.
+
+The application must generate high-quality, photorealistic, cinematic wallpapers and graphic-designed portrait images using exactly TWO reference images of the same individual.
+
+The interface must be optimized primarily for Android mobile browsers.
+
+Prioritize free-tier AI image-generation APIs and open-source technologies wherever possible.
+
+2. EXACTLY TWO REFERENCE IMAGE INPUTS
+
+The application must provide only two main image upload fields.
+
+IMAGE INPUT 1: FULL BODY WITH FACE
+
+This is the primary full-body reference.
+
+Use it to understand:
+
+- Overall body appearance.
+- Body proportions.
+- Clothing and accessories.
+- Natural posture.
+- Full-body composition.
+- Visible physical characteristics.
+
+IMAGE INPUT 2: FACE CLOSE-UP
+
+This is the primary facial identity reference.
+
+Use it to understand:
+
+- Facial identity.
+- Face shape.
+- Eyes and eyebrows.
+- Nose and lips.
+- Hairstyle and hairline.
+- Beard and moustache.
+- Glasses.
+- Natural skin texture.
+
+DUAL REFERENCE INTELLIGENCE
+
+Both uploaded images represent the same person.
+
+The AI must intelligently combine both references into one consistent individual.
+
+The close-up reference has priority for facial identity.
+
+The full-body reference has priority for overall appearance, posture, and clothing.
+
+Never treat these images as two separate individuals.
+
+Do not randomly blend facial characteristics.
+
+3. IMAGE FORMAT SELECTION
+
+Provide a dedicated image-format selector.
+
+Supported presets:
+
+- 9:20 — Android Wallpaper.
+- 9:16 — Portrait / Social Media.
+- 4:5 — Portrait Photography.
+- 1:1 — Square Image.
+- 16:9 — Landscape.
+- Custom Aspect Ratio, when supported.
+
+Default selection: 9:20 Android Wallpaper.
+
+Target Android Wallpaper Resolution: 1440 × 3200 pixels.
+
+If the selected image API does not support the requested dimensions:
+
+- Generate using the closest supported aspect ratio.
+- Preserve the original composition.
+- Use high-quality upscaling where available.
+- Never stretch or distort the subject.
+- Display the actual generated resolution.
+
+4. ADVANCED FACE IDENTITY PRESERVATION
+
+Implement reference-guided image generation with the strongest available identity-preservation features.
+
+Priorities:
+
+- Maintain recognizable facial identity.
+- Preserve facial proportions.
+- Preserve glasses and facial hair when present.
+- Maintain natural skin texture.
+- Avoid unnecessary facial changes.
+- Minimize identity drift.
+- Maintain consistent appearance across generated variations.
+
+Target: Approximately 80% or higher facial similarity where technically achievable.
+
+This is a target, not a guaranteed score.
+
+Never display fake face accuracy percentages.
+
+5. ADVANCED BENGALI & ENGLISH TYPOGRAPHY ENGINE
+
+This is one of the most important features of the application.
+
+The application must support accurate text placement inside generated images.
+
+Supported languages:
+
+- Bengali.
+- English.
+- Mixed Bengali and English.
+
+The user must be able to enter exact text that should appear in the final image.
+
+Typography Intelligence
+
+Automatically analyze:
+
+- Text meaning.
+- Headline importance.
+- Supporting text.
+- Number of lines.
+- Available composition space.
+- Background contrast.
+- Font suitability.
+- Visual hierarchy.
+
+LINE-BY-LINE DESIGN
+
+Each line must be independently styled when appropriate.
+
+Provide:
+
+- Different font sizes for different lines.
+- Different font weights.
+- Separate text colors.
+- Bold headlines.
+- Elegant supporting text.
+- Highlighted keywords.
+- Controlled letter spacing.
+- Proper line spacing.
+- Balanced alignment.
+
+Avoid using identical font sizes and colors for every line.
+
+BENGALI FONT SUPPORT
+
+Use properly licensed Bengali Unicode fonts.
+
+Recommended font families:
+
+- Noto Sans Bengali.
+- Noto Serif Bengali.
+- Hind Siliguri.
+- SolaimanLipi, where licensing permits.
+- Other properly licensed Bengali typefaces.
+
+Ensure accurate Bengali vowel signs, conjunct letters, punctuation, and Unicode shaping.
+
+ENGLISH FONT SUPPORT
+
+Provide professional font options:
+
+- Inter.
+- Poppins.
+- Montserrat.
+- Playfair Display.
+- Bebas Neue.
+- Other properly licensed fonts.
+
+Choose fonts according to the visual theme.
+
+TEXT EFFECTS
+
+Support:
+
+- Gradient text.
+- Soft shadows.
+- Text outlines.
+- Highlight backgrounds.
+- Metallic text effects.
+- Elegant borders.
+- Subtle glow.
+- Decorative separators.
+- Professional typography graphics.
+
+Do not overuse effects.
+
+The final composition must remain elegant, readable, and professional.
+
+6. GRAPHIC DESIGN & LAYOUT ENGINE
+
+Treat the application as a professional graphic design studio.
+
+Automatically arrange text and graphics according to the image composition.
+
+Available layouts:
+
+- Cinematic Poster.
+- Editorial Portrait.
+- Luxury Magazine Cover.
+- Motivational Quote Poster.
+- Modern Typography Poster.
+- Minimalist Portrait.
+- Bold Graphic Composition.
+- Premium Social Media Design.
+
+Design requirements:
+
+- Keep text away from important facial features.
+- Avoid overlapping text with the subject.
+- Maintain visual balance.
+- Use suitable negative space.
+- Maintain strong contrast.
+- Use appropriate margins.
+- Ensure mobile-screen readability.
+
+7. EXACT TEXT ACCURACY
+
+This requirement is critical.
+
+The AI must never rewrite, misspell, invent, or automatically change user-provided text.
+
+Implement a dedicated text-rendering system using SVG, Canvas, or another reliable typography renderer.
+
+Recommended workflow:
+
+1. Generate the background and portrait.
+2. Receive the exact user-provided text.
+3. Render text separately using suitable fonts.
+4. Apply line-by-line typography styling.
+5. Composite the text and graphics onto the image.
+6. Produce the final high-resolution image.
+
+The user must be able to edit the text before final rendering.
+
+If the user requests an image without text, do not add any unwanted text.
+
+8. CINEMATIC IMAGE GENERATION
+
+Provide premium visual styles:
+
+- Photorealistic Portrait.
+- Cinematic Photography.
+- Luxury Editorial.
+- Professional Studio Portrait.
+- Natural Outdoor Photography.
+- Dark Cinematic.
+- Dramatic Lighting.
+- Golden Hour.
+- Artistic Portrait.
+- Modern Fashion Photography.
+
+Automatically optimize:
+
+- Lighting.
+- Camera perspective.
+- Background.
+- Depth of field.
+- Color grading.
+- Composition.
+- Natural shadows.
+- Subject separation.
+- Image detail.
+
+Preserve realistic facial appearance.
+
+9. SMART BENGALI PROMPT ENGINE
+
+The user should be able to describe the desired image in Bengali.
+
+Example:
+
+"আমার ছবিটি দিয়ে একটি সুন্দর সিনেমাটিক পোস্টার তৈরি করো। উপরে বড় বাংলা শিরোনাম থাকবে, নিচে ছোট ইংরেজি লেখা থাকবে। প্রতিটি লাইনে আলাদা রং এবং প্রফেশনাল ফন্ট ব্যবহার করবে।"
+
+The AI should understand the instruction and convert it into an optimized image-generation and graphic-design workflow.
+
+Preserve the original meaning of all user instructions.
+
+10. MOBILE-FIRST INTERFACE
+
+Design a premium dark-themed responsive interface for Android smartphones.
+
+Main sections:
+
+1. Full Body + Face Image Upload.
+2. Face Close-up Image Upload.
+3. Reference Image Preview.
+4. Bengali / English Prompt Input.
+5. Exact Text Input.
+6. Image Aspect Ratio Selector.
+7. Cinematic Style Selector.
+8. Typography Style Selector.
+9. Generate Image Button.
+10. Generation Progress.
+11. Final Image Preview.
+12. Download PNG / JPEG.
+
+Use large touch-friendly controls and clear Bengali labels.
+
+11. FREE API & SECURITY
+
+- Prioritize genuinely available free-tier image-generation APIs.
+- Select APIs that support reference-image conditioning.
+- Verify whether dual-reference input is supported.
+- Use open-source alternatives where suitable.
+- Do not assume all free services support every requested feature.
+- Keep private API keys on the backend.
+- Handle rate limits and temporary API failures.
+- Provide clear error messages.
+- Never simulate successful image generation.
+
+12. FINAL EXPORT
+
+Provide:
+
+- PNG export.
+- High-quality JPEG export.
+- Requested aspect ratio.
+- High-resolution output when supported.
+- Accurate Bengali and English typography.
+- Android-compatible download.
+- Meaningful filenames.
+
+13. FINAL ACCEPTANCE REQUIREMENTS
+
+The project is complete only when:
+
+1. Exactly two reference-image inputs are available.
+2. Both images are interpreted as the same person.
+3. Facial identity is preserved as closely as the model allows.
+4. Multiple image formats are supported.
+5. Bengali and English text can be rendered accurately.
+6. Each text line can have independent styling.
+7. Font size, weight, color, and spacing are controlled.
+8. Text is readable on mobile screens.
+9. Generated images are genuine AI outputs.
+10. The final image can be downloaded successfully.
+11. The application works smoothly on Android browsers.
+
+FINAL VISION
+
+Build a professional AI Personal Wallpaper & Graphic Design Studio that combines advanced dual-reference identity preservation, photorealistic image generation, cinematic composition, and high-quality Bengali and English typography.
+
+The final result must look like a professionally designed premium poster or wallpaper, not an ordinary AI-generated image.
