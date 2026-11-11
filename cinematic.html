@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#101114">
+  <title>সিনেমাটিক AI Image Generator · Wallpaper Studio</title>
+  <style>
+    :root{color-scheme:dark;--bg:#101114;--panel:#191a20;--line:#343641;--text:#f7f5f2;--muted:#a6a7b2;--accent:#c6a5ff;font-family:system-ui,-apple-system,"Noto Sans Bengali","Nirmala UI",sans-serif}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 75% -10%,#302347 0,transparent 42%),var(--bg);color:var(--text);line-height:1.55}.wrap{max-width:980px;margin:auto;padding:20px 15px 50px}.brand{font-weight:750;margin:0 0 25px}.hero h1{font-size:clamp(28px,6vw,42px);line-height:1.2;margin:7px 0}.hero p,.muted{color:var(--muted)}.eyebrow{font-size:12px;color:var(--accent);letter-spacing:.12em;text-transform:uppercase}.grid{display:grid;grid-template-columns:1fr .85fr;gap:18px;align-items:start}.stack{display:grid;gap:15px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:17px}.card h2{font-size:17px;margin:0 0 3px}.muted{font-size:13px;margin:0 0 14px}label{display:block;font-size:13px;font-weight:700;margin:11px 0 6px}input,textarea,select,button{font:inherit}input[type=file],textarea,select{width:100%;background:#111217;color:var(--text);border:1px solid #444651;border-radius:10px;padding:11px}textarea{min-height:110px;resize:vertical}input:focus-visible,textarea:focus-visible,select:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}.two{display:grid;grid-template-columns:1fr 1fr;gap:11px}.note{font-size:12px;color:var(--muted);margin:7px 0}.warning{padding:12px;border:1px solid #66502d;background:#2c2418;border-radius:12px;color:#ffe1a9;font-size:13px;margin:15px 0}.warning.error{border-color:#763b46;background:#321e24;color:#ffd2d7}.warning.good{border-color:#315642;background:#182b24;color:#c9f3da}.primary,.download{border:0;border-radius:10px;padding:13px 15px;min-height:48px;font-weight:750;width:100%;cursor:pointer}.primary{background:linear-gradient(130deg,#d8c0ff,#ab88ef);color:#21182c}.primary:disabled{opacity:.55;cursor:wait}.download{background:#b4edca;color:#12251a;margin-top:8px}.result{min-height:300px;background:#0a0b0e;border:1px solid var(--line);border-radius:12px;display:grid;place-items:center;overflow:hidden;padding:10px}.result img{display:block;max-width:100%;max-height:70vh;object-fit:contain;border-radius:7px}.placeholder{text-align:center;color:#aaa6b5;padding:30px;font-size:13px}.details{font-size:12px;color:var(--muted);padding:10px 0}.privacy{border-top:1px solid var(--line);padding-top:12px;margin-top:14px;color:var(--muted);font-size:12px}.status{font-size:13px;color:var(--muted);min-height:21px;margin-top:10px}.link{color:#d6c1ff}@media(max-width:760px){.grid{grid-template-columns:1fr}.preview{order:-1}.wrap{padding:14px 12px 40px}}@media(max-width:440px){.two{grid-template-columns:1fr}.card{padding:14px}}
+  </style>
+</head>
+<body><main class="wrap">
+  <div class="brand">✦ Wallpaper Studio</div>
+  <header class="hero"><div class="eyebrow">AI cinematic image generation</div><h1>বাস্তবধর্মী cinematic ছবি তৈরি করুন</h1><p>দুটি reference থেকে একটি AI image generate করুন। AI-র লেখা ভুল হতে পারে, তাই image-এ text দেওয়া হয় না; নির্ভুল বাংলা/English typography পরের ধাপে যোগ করুন।</p></header>
+  <div class="warning" id="config-warning" role="status">AI generation-এর জন্য server-এ OPENAI_API_KEY সেট থাকতে হবে। API key browser-এ দেওয়া যাবে না।</div>
+  <div class="grid"><div class="stack">
+    <section class="card"><h2>১ · একই ব্যক্তির দুইটি reference</h2><p class="muted">শুধু নিজের বা ব্যবহারের অনুমতি থাকা ছবি দিন · JPEG, PNG, WebP · সর্বোচ্চ 10 MB করে</p>
+      <label for="full">পূর্ণদেহের ছবি · পোশাক, ভঙ্গি ও body reference</label><input id="full" type="file" accept="image/jpeg,image/png,image/webp">
+      <label for="face">মুখের ক্লোজ-আপ · facial identity reference</label><input id="face" type="file" accept="image/jpeg,image/png,image/webp">
+    </section>
+    <section class="card"><h2>২ · Scene ও generation setting</h2>
+      <label for="prompt">আপনার scene description</label><textarea id="prompt" maxlength="4000" placeholder="যেমন: বৃষ্টিভেজা ঢাকার রাস্তায় cinematic portrait, পেছনে নরম neon আলো, প্রাকৃতিক skin texture…"></textarea><p class="note">মুখের পরিচয়ে close-up এবং পোশাক/ভঙ্গিতে full-body ছবিকে অগ্রাধিকার দিয়ে prompt তৈরি হবে। ছবিতে কোনো text বা watermark যোগ করা হবে না।</p>
+      <div class="two"><div><label for="style">Visual style</label><select id="style"><option>Photorealistic portrait</option><option selected>Cinematic photography</option><option>Editorial portrait</option><option>Artistic / graphic design</option><option>Studio portrait</option><option>Natural outdoor</option></select></div><div><label for="lighting">Lighting</label><select id="lighting"><option>Soft cinematic light</option><option>Golden hour</option><option>Dramatic studio light</option><option>Natural daylight</option><option>Moody low-key light</option></select></div></div>
+      <label for="ratio">Requested aspect ratio</label><select id="ratio"><option value="9:20">9:20 · Android wallpaper</option><option value="9:16">9:16 · Portrait / social</option><option value="4:5">4:5 · Portrait photo</option><option value="1:1">1:1 · Square</option><option value="16:9">16:9 · Landscape</option></select>
+      <p class="note">Provider-এর supported sizes সীমিত: 9:20, 9:16 ও 4:5-এর জন্য portrait 1024×1536; 1:1-এর জন্য 1024×1024; 16:9-এর জন্য landscape 1536×1024। এগুলো native 1440×3200 নয় এবং crop হতে পারে।</p>
+      <button class="primary" id="generate" type="button">✦ High quality AI image generate করুন</button><div class="status" id="status" aria-live="polite" role="status"></div>
+    </section>
+    <section class="card"><h2>গোপনীয়তা ও provider</h2><p class="muted" style="margin:8px 0 0">Generate করলে browser-এ বাছсан reference images server-এ পাঠানো হয়, সেখান থেকে OpenAI Images API-তে image editing request হিসেবে যায়। Server request content log করে না; provider-এর retention ও processing শর্ত প্রযোজ্য। কোনো retention/deletion নিশ্চয়তা দেওয়া হচ্ছে না। API ব্যবহার বিলযোগ্য হতে পারে; free tier ধরে নেওয়া যাবে না।</p><p class="note"><a class="link" href="https://developers.openai.com/api/docs/guides/image-generation" target="_blank" rel="noreferrer">OpenAI image generation documentation</a></p></section>
+  </div>
+  <aside class="card preview"><h2>Generated result</h2><p class="muted">AI output · typography ছাড়া</p><div class="result" id="result"><div class="placeholder">Generated image এখানে দেখানো হবে।<br>মুখ বা subject crop হয়েছে কি না পর্যালোচনা করুন।</div></div><div class="details" id="dimensions"></div><button class="download" id="download" type="button" hidden>PNG download</button></aside>
+  </div>
+  <p class="note" style="margin-top:22px"><a class="link" href="/">← Typography editor-এ ফিরুন</a></p>
+</main>
+<script>
+(() => {
+  const $=id=>document.getElementById(id); let generatedUrl='';
+  const allowed=new Set(['image/jpeg','image/png','image/webp']);
+  async function checkConfig(){try{const r=await fetch('/health');const d=await r.json();if(!d.generationConfigured){$('config-warning').textContent='Server-এ OPENAI_API_KEY configured নয়। .env.example অনুসরণ করে server-এ key যোগ করুন।';}else{$('config-warning').className='warning good';$('config-warning').textContent='Server-side AI provider configured। Image provider-এ ছবি পাঠানোর আগে privacy notice পড়ুন।';}}catch{$('config-warning').textContent='Backend server পাওয়া যায়নি। README.md-এ local server চালানোর নির্দেশনা দেখুন।';}}
+  function validate(file,label){if(!file)return `${label} নির্বাচন করুন।`;if(!allowed.has(file.type))return `${label}: JPEG, PNG বা WebP file দিন।`;if(file.size>10*1024*1024)return `${label}: file 10 MB-এর বেশি байна.`;return '';}
+  $('generate').addEventListener('click',async()=>{
+    const full=$('full').files[0],face=$('face').files[0],prompt=$('prompt').value.trim();
+    const issue=validate(full,'পূর্ণদেহের ছবি')||validate(face,'মুখের ক্লোজ-আপ')||(!prompt?'Scene description লিখুন।':'');
+    if(issue){$('status').textContent=issue;$('status').className='status warning error';return;}
+    const form=new FormData();form.append('fullBody',full);form.append('faceCloseup',face);form.append('prompt',prompt);form.append('style',$('style').value);form.append('lighting',$('lighting').value);form.append('ratio',$('ratio').value);
+    const button=$('generate');button.disabled=true;button.textContent='ছবি তৈরি হচ্ছে…';$('status').textContent='Provider-এ request পাঠানো হয়েছে। সময় লাগতে পারে; প্রকৃত progress সরবরাহ করা হয় না।';$('status').className='status';$('download').hidden=true;
+    try{const response=await fetch('/api/generate',{method:'POST',body:form});let data;try{data=await response.json();}catch{data={error:'Server থেকে সঠিক response পাওয়া যায়নি।'};}if(!response.ok)throw new Error(data.error||`Request failed (${response.status}).`);if(generatedUrl)URL.revokeObjectURL(generatedUrl);const bytes=Uint8Array.from(atob(data.image),c=>c.charCodeAt(0));generatedUrl=URL.createObjectURL(new Blob([bytes],{type:data.mimeType||'image/png'}));const image=new Image();image.alt='AI-generated cinematic image';image.onload=()=>{$('result').replaceChildren(image);};image.onerror=()=>{$('status').textContent='Generated image decode করা যায়নি। আবার চেষ্টা করুন।';};image.src=generatedUrl;$('dimensions').textContent=`Requested ${data.requestedRatio} · actual ${data.actualWidth} × ${data.actualHeight} px (${data.actualRatio}) · ${data.quality} quality · ${data.model}`;$('download').hidden=false;$('status').textContent='Image generation সম্পন্ন। মুখ/subject framing যাচাই করে download করুন।';$('status').className='status warning good';}
+    catch(error){$('status').textContent=error.message||'Network error। সংযোগ দেখে আবার চেষ্টা করুন।';$('status').className='status warning error';}
+    finally{button.disabled=false;button.textContent='✦ High quality AI image generate করুন';}
+  });
+  $('download').addEventListener('click',()=>{if(!generatedUrl)return;const a=document.createElement('a');a.href=generatedUrl;a.download='cinematic-wallpaper.png';document.body.appendChild(a);a.click();a.remove();});
+  window.addEventListener('beforeunload',()=>{if(generatedUrl)URL.revokeObjectURL(generatedUrl);});
+  checkConfig();
+})();
+</script></body></html>
