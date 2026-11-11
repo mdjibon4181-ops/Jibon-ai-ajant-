@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="বাংলা ও ইংরেজি typography-সহ mobile-first wallpaper design studio।">
+  <title>Wallpaper & Typography Studio</title>
+  <style>
+    :root{color-scheme:dark;--bg:#101114;--panel:#191a20;--panel2:#202129;--text:#f7f5f2;--muted:#a6a7b2;--line:#343641;--accent:#c6a5ff;--accent2:#a98af0;--danger:#ff8f9b;--ok:#9be0bc;font-family:system-ui,-apple-system,"Noto Sans Bengali","Nirmala UI",sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% -15%,#29213d 0,transparent 42%),var(--bg);color:var(--text);line-height:1.55}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #c6a5ff;outline-offset:2px}.wrap{max-width:1180px;margin:auto;padding:20px 16px 70px}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:8px 0 24px}.brand{display:flex;gap:11px;align-items:center;font-weight:750}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#d9bcff,#8e6de0);display:grid;place-items:center;color:#16121e;font-size:20px}.tag{border:1px solid var(--line);border-radius:999px;padding:6px 11px;color:var(--muted);font-size:12px}.hero{margin:12px 0 26px}.eyebrow{color:var(--accent);font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase}.hero h1{font-size:clamp(28px,6vw,46px);line-height:1.18;margin:8px 0}.hero p{color:var(--muted);max-width:720px;margin:8px 0}.notice{background:#292217;border:1px solid #59472c;color:#f4d8a4;border-radius:14px;padding:13px 15px;margin:18px 0 22px;font-size:14px}.notice strong{color:#ffe7b6}.notice.error{background:#321e24;border-color:#60333e;color:#ffd2d7}.notice.success{background:#182b24;border-color:#315642;color:#c9f3da}.layout{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(320px,.85fr);gap:20px;align-items:start}.stack{display:grid;gap:16px}.card{background:color-mix(in srgb,var(--panel) 95%,transparent);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 12px 35px #0002}.card h2{margin:0 0 4px;font-size:18px}.sub{color:var(--muted);font-size:13px;margin:0 0 16px}.field-label{font-size:14px;font-weight:700;display:block;margin-bottom:7px}.upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.upload{min-width:0;background:var(--panel2);border:1px dashed #555765;border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:8px}.upload b{font-size:14px}.upload small{color:var(--muted);font-size:12px}.upload input{width:100%;font-size:13px;color:var(--muted)}.thumb{width:100%;height:130px;border-radius:10px;object-fit:cover;background:#111;display:none}.upload-actions{display:flex;justify-content:space-between;align-items:center;gap:8px}.text-button{background:none;border:0;color:#e3cfff;padding:6px 0;font-size:12px}.text-button:disabled{opacity:.4;cursor:default}.hint{font-size:12px;color:var(--muted);margin:10px 0 0}.field{margin:12px 0}.field textarea,.field input[type=text],.field input[type=number],.field select,.linebox input,.linebox select{width:100%;background:#111217;border:1px solid #41434e;border-radius:10px;padding:11px 12px;color:var(--text)}textarea{resize:vertical;min-height:88px}.field select,.linebox select{min-height:43px}.field input[type=color]{width:44px;height:40px;padding:3px;background:#111217;border:1px solid #41434e;border-radius:8px}.field input[type=range]{width:100%;accent-color:var(--accent)}.ratio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.ratio-option{position:relative}.ratio-option input{position:absolute;opacity:0}.ratio-option span{min-height:46px;border:1px solid var(--line);border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;padding:6px;font-size:12px;color:var(--muted);cursor:pointer}.ratio-option input:checked+span{border-color:var(--accent);color:var(--text);background:#302741}.ratio-option input:focus-visible+span{outline:3px solid var(--accent)}.split{display:grid;grid-template-columns:1fr 1fr;gap:10px}.line-list{display:grid;gap:10px}.linebox{border:1px solid var(--line);background:#15161b;border-radius:12px;padding:12px}.linehead{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;font-size:13px;font-weight:700}.linebox textarea{width:100%;min-height:58px;background:#101115;border:1px solid #41434e;border-radius:9px;padding:9px;color:var(--text);resize:vertical}.controls{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.mini-label{display:block;color:var(--muted);font-size:11px;margin:0 0 4px}.linebox input[type=number]{padding:8px;min-height:39px}.linebox select{padding:7px;font-size:12px;min-height:39px}.color-control{display:flex;align-items:center;gap:7px}.color-control input[type=color]{width:40px;height:38px;padding:2px;border:1px solid var(--line);border-radius:7px;background:#111}.secondary,.primary,.download{border:0;border-radius:11px;padding:12px 15px;font-weight:750;min-height:46px}.secondary{color:var(--text);background:#30313a;border:1px solid #454752}.primary{color:#21182c;background:linear-gradient(135deg,#d7c0ff,#ac8af0)}.primary:disabled{opacity:.45;cursor:not-allowed}.download{background:#b4edca;color:#12251a}.button-row{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.button-row>*{flex:1}.preview-card{position:sticky;top:14px}.preview-wrap{background:#0b0c0f;border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;justify-content:center;min-height:240px;overflow:hidden}.canvas-shell{width:min(100%,360px);aspect-ratio:9/20;position:relative}.canvas-shell canvas{display:block;width:100%;height:100%;border-radius:8px;background:linear-gradient(150deg,#333243,#15151a 55%,#6e5362)}.canvas-empty{position:absolute;inset:0;display:grid;place-content:center;text-align:center;color:#d4d0dc;padding:22px;pointer-events:none}.canvas-empty strong{font-size:18px}.canvas-empty span{font-size:12px;color:#c0bbc9;margin-top:6px}.meta{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:12px;padding:10px 2px}.status{font-size:13px;color:var(--muted);min-height:20px;margin-top:8px}.privacy{border-top:1px solid var(--line);margin-top:24px;padding-top:16px;color:var(--muted);font-size:12px}.footer{color:#777984;text-align:center;font-size:12px;margin:30px 0 0}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:800px){.layout{grid-template-columns:1fr}.preview-card{position:static;order:-1}.canvas-shell{width:min(72vw,330px)}.card{padding:15px}.wrap{padding:12px 12px 42px}.topbar{padding-bottom:14px}}
+    @media(max-width:440px){.upload-grid{grid-template-columns:1fr}.thumb{height:170px}.ratio-grid{grid-template-columns:repeat(2,1fr)}.canvas-shell{width:min(78vw,300px)}.tag{font-size:10px}.controls{gap:7px}}
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="topbar"><div class="brand"><div class="logo" aria-hidden="true">✦</div><span>Wallpaper Studio</span></div><span class="tag">ANDROID · MOBILE FIRST</span></header>
+    <section class="hero"><div class="eyebrow">Personal design workspace</div><h1>আপনার ছবি, আপনার গল্প</h1><p>দুটি reference ছবি যোগ করুন, পছন্দের format বেছে নিন, এবং বাংলা/English typography দিয়ে নিজের design তৈরি ও export করুন।</p></section>
+    <div class="notice" role="status"><strong>AI generation এখনো সংযুক্ত নয়।</strong> এই repository-তে কোনো image-generation backend বা API configuration নেই। তাই এখানে AI result তৈরি বা identity preservation দাবি করা হচ্ছে না। নিচের editor-এ আপনার full-body ছবির ওপর typography preview ও local export করা যায়।</div>
+    <div class="layout">
+      <div class="stack">
+        <section class="card" aria-labelledby="refs-title"><h2 id="refs-title">১ · Reference ছবি</h2><p class="sub">একই ব্যক্তির নিজের বা ব্যবহারের অনুমতি থাকা ছবি দিন। JPG, PNG বা WebP · সর্বোচ্চ 10 MB করে।</p>
+          <div class="upload-grid">
+            <div class="upload"><b>পূর্ণদেহের ছবি <span aria-hidden="true">·</span> শরীর, পোশাক ও ভঙ্গি</b><small>Typography preview-এর background হিসেবে ব্যবহৃত হবে।</small><img class="thumb" id="full-preview" alt="পূর্ণদেহের ছবির preview"><input id="full-image" type="file" accept="image/jpeg,image/png,image/webp" aria-label="পূর্ণদেহের ছবি নির্বাচন করুন"><div class="upload-actions"><small id="full-name">কোনো ছবি নির্বাচন করা হয়নি</small><button class="text-button" id="remove-full" type="button" disabled>মুছুন</button></div></div>
+            <div class="upload"><b>মুখের ক্লোজ-আপ <span aria-hidden="true">·</span> মুখের পরিচয়</b><small>বর্তমানে শুধু reference preview; AI-তে পাঠানো হয় না।</small><img class="thumb" id="face-preview" alt="মুখের ক্লোজ-আপের preview"><input id="face-image" type="file" accept="image/jpeg,image/png,image/webp" aria-label="মুখের ক্লোজ-আপ নির্বাচন করুন"><div class="upload-actions"><small id="face-name">কোনো ছবি নির্বাচন করা হয়নি</small><button class="text-button" id="remove-face" type="button" disabled>মুছুন</button></div></div>
+          </div><p class="hint" id="upload-error" role="alert"></p>
+        </section>
+        <section class="card" aria-labelledby="scene-title"><h2 id="scene-title">২ · Scene ও style brief</h2><p class="sub">এগুলো ভবিষ্যৎ AI integration-এর জন্য editable brief; এই page নিজে image generate করে না।</p>
+          <div class="field"><label class="field-label" for="prompt">আপনার prompt</label><textarea id="prompt" placeholder="যেমন: বৃষ্টিভেজা শহরে cinematic portrait, নরম আলো ও গভীর নীল background…"></textarea><div class="hint">কাঙ্ক্ষিত দৃশ্য, আলো, mood, background ও পোশাকের নির্দেশনা লিখুন।</div></div>
+          <div class="split"><div class="field"><label class="field-label" for="style">Visual style</label><select id="style"><option>Photorealistic portrait</option><option>Cinematic photography</option><option>Editorial portrait</option><option>Artistic / graphic design</option><option>Studio portrait</option><option>Natural outdoor</option></select></div><div class="field"><label class="field-label" for="ratio">Image format</label><select id="ratio"><option value="9:20">9:20 — Android wallpaper</option><option value="9:16">9:16 — Portrait / social</option><option value="4:5">4:5 — Portrait photo</option><option value="1:1">1:1 — Square</option><option value="16:9">16:9 — Landscape</option></select></div></div>
+          <div class="hint">Android wallpaper target: 1440 × 3200 px। Export-এ নির্বাচিত ratio অনুযায়ী এই target side বজায় রেখে dimensions তৈরি হবে। Crop preview-তে দেখে নিন।</div>
+        </section>
+        <section class="card" aria-labelledby="type-title"><h2 id="type-title">৩ · Typography</h2><p class="sub">আপনার লেখা হুবহু রাখা হয়। প্রতিটি text line-এর style আলাদাভাবে বদলান।</p><div id="line-list" class="line-list"></div><div class="button-row"><button class="secondary" type="button" id="add-line">＋ Text line যোগ করুন</button></div><p class="hint">বাংলা rendering আপনার browser-এর Unicode shaping ও installed font-এর ওপর নির্ভরশীল। Export-এর আগে preview যাচাই করুন।</p></section>
+        <section class="card" aria-labelledby="generate-title"><h2 id="generate-title">৪ · Generate / Export</h2><p class="sub">AI generation-এর জন্য server-side provider ও credentials প্রয়োজন।</p><div class="button-row"><button class="primary" type="button" disabled aria-describedby="generation-note">AI image তৈরি করুন · অনুপলব্ধ</button><button class="download" type="button" id="export" disabled>PNG download</button></div><div class="field"><label class="field-label" for="export-format">Export format</label><select id="export-format"><option value="png">PNG</option><option value="jpeg">JPEG · high quality</option></select></div><div class="status" id="status" role="status" aria-live="polite">Export করতে পূর্ণদেহের ছবি এবং মুখের ক্লোজ-আপ—দুটিই যোগ করুন।</div><p class="hint" id="generation-note">AI বাটন নিষ্ক্রিয় রাখা হয়েছে: কোনো API integration নেই। Export হলো নির্বাচিত full-body ছবির typography composition; এটি AI-generated image নয়।</p></section>
+        <div class="privacy"><strong>গোপনীয়তা:</strong> এই static page ছবিগুলো server-এ upload করে না; preview ও export browser-এই হয়। Page বন্ধ করলে ছবির in-memory preview হারিয়ে যাবে। Server-side validation, retention বা deletion প্রযোজ্য নয়, কারণ backend নেই।</div>
+      </div>
+      <aside class="card preview-card" aria-label="Design preview"><h2>Live preview</h2><p class="sub">Crop ও text layout-সহ final export-এর preview</p><div class="preview-wrap"><div class="canvas-shell" id="canvas-shell"><canvas id="art" width="450" height="1000" aria-label="Typography design preview"></canvas><div class="canvas-empty" id="canvas-empty"><strong>আপনার design এখানে</strong><span>Preview শুরু করতে পূর্ণদেহের ছবি যোগ করুন</span></div></div></div><div class="meta"><span id="preview-ratio">9:20 · Android wallpaper</span><span id="dimensions">Preview: 450 × 1000</span></div><div class="hint">ছবি aspect ratio অনুযায়ী center-crop হতে পারে। মুখ বা গুরুত্বপূর্ণ অংশ কাটা পড়ছে কি না দেখুন।</div></aside>
+    </div>
+    <p class="footer">Wallpaper & Typography Studio · Local preview/export only · AI provider not configured</p>
+  </main>
+<script>
+(() => {
+  'use strict';
+  const MAX_BYTES = 10 * 1024 * 1024;
+  const ACCEPTED = new Set(['image/jpeg', 'image/png', 'image/webp']);
+  const entries = { full: null, face: null };
+  const ratioNames = { '9:20':'Android wallpaper', '9:16':'Portrait / social', '4:5':'Portrait photo', '1:1':'Square', '16:9':'Landscape' };
+  const $ = id => document.getElementById(id);
+  const canvas = $('art');
+  const ctx = canvas.getContext('2d');
+  const lines = [];
+  let nextId = 1;
+
+  function setStatus(message, kind='') {
+    const el = $('status'); el.textContent = message; el.className = 'status' + (kind ? ' ' + kind : '');
+  }
+  function updateActions() {
+    const ready = Boolean(entries.full && entries.face);
+    $('export').disabled = !ready;
+    if (ready) setStatus('দুটি reference যোগ হয়েছে। Local typography export প্রস্তুত।', 'success');
+    else setStatus('Export করতে পূর্ণদেহের ছবি এবং মুখের ক্লোজ-আপ—দুটিই যোগ করুন।');
+  }
+  function loadImageFile(file, key) {
+    const error = $('upload-error'); error.textContent = '';
+    if (!file) return;
+    if (!ACCEPTED.has(file.type)) { error.textContent = 'অসমর্থিত file type। JPG, PNG বা WebP নির্বাচন করুন।'; return; }
+    if (file.size > MAX_BYTES) { error.textContent = 'ছবির আকার 10 MB-এর বেশি। ছোট file নির্বাচন করুন।'; return; }
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => {
+      if (!img.naturalWidth || !img.naturalHeight) { URL.revokeObjectURL(url); error.textContent='ছবিটি পড়া যায়নি। অন্য image file চেষ্টা করুন।'; return; }
+      if (entries[key]?.url) URL.revokeObjectURL(entries[key].url);
+      entries[key] = { img, url, file };
+      const prefix = key === 'full' ? 'full' : 'face';
+      $(prefix + '-preview').src = url;
+      $(prefix + '-preview').style.display = 'block';
+      $(prefix + '-name').textContent = `${file.name} · ${img.naturalWidth}×${img.naturalHeight}`;
+      $('remove-' + prefix).disabled = false;
+      if (key === 'full') draw();
+      updateActions();
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); error.textContent='ছবিটি decode করা যায়নি বা file ক্ষতিগ্রস্ত। অন্য image file চেষ্টা করুন।'; };
+    img.src = url;
+  }
+  for (const [key, inputId] of [['full','full-image'],['face','face-image']]) {
+    $(inputId).addEventListener('change', e => { if (e.target.files?.[0]) loadImageFile(e.target.files[0], key); });
+    const prefix = key === 'full' ? 'full' : 'face';
+    $('remove-' + prefix).addEventListener('click', () => {
+      if (entries[key]?.url) URL.revokeObjectURL(entries[key].url);
+      entries[key] = null; $(inputId).value = ''; $(prefix + '-preview').removeAttribute('src');
+      $(prefix + '-preview').style.display = 'none'; $(prefix + '-name').textContent = 'কোনো ছবি নির্বাচন করা হয়নি';
+      $('remove-' + prefix).disabled = true; if (key === 'full') draw(); updateActions();
+    });
+  }
+  function addLine(data={}) {
+    const id = nextId++;
+    const item = { id, text:data.text ?? '', size:data.size ?? (lines.length ? 28 : 52), color:data.color ?? '#ffffff', weight:data.weight ?? '700', align:data.align ?? 'center', position:data.position ?? (lines.length ? 'bottom' : 'top'), opacity:data.opacity ?? 100, font:data.font ?? 'sans' };
+    lines.push(item);
+    const box = document.createElement('div'); box.className='linebox'; box.dataset.id=String(id);
+    box.innerHTML = `<div class="linehead"><span>Text <span class="line-number"></span></span><button type="button" class="text-button remove-line" aria-label="এই text line মুছুন">মুছুন</button></div><label class="sr-only">Text content</label><textarea class="text-content" placeholder="এখানে হুবহু আপনার লেখা লিখুন" maxlength="500"></textarea><div class="controls"><div><label class="mini-label">Font size · px</label><input class="size" type="number" min="12" max="160" value="${item.size}" inputmode="numeric"></div><div><label class="mini-label">Weight</label><select class="weight"><option value="400">Regular</option><option value="600">Semi-bold</option><option value="700">Bold</option><option value="800">Extra-bold</option></select></div><div><label class="mini-label">Text color</label><div class="color-control"><input class="color" type="color" value="${item.color}"><span class="mini-label">Color</span></div></div><div><label class="mini-label">Alignment</label><select class="align"><option value="left">Left</option><option value="center">Center</option><option value="right">Right</option></select></div><div><label class="mini-label">Position</label><select class="position"><option value="top">Top</option><option value="center">Center</option><option value="bottom">Bottom</option></select></div><div><label class="mini-label">Font family</label><select class="font"><option value="sans">Sans · Bengali fallback</option><option value="serif">Serif · Bengali fallback</option></select></div><div style="grid-column:1/-1"><label class="mini-label">Opacity · <span class="opacity-value">${item.opacity}%</span></label><input class="opacity" type="range" min="20" max="100" value="${item.opacity}"></div></div>`;
+    $('line-list').appendChild(box);
+    box.querySelector('.text-content').value=item.text;
+    box.querySelector('.weight').value=item.weight; box.querySelector('.align').value=item.align;
+    box.querySelector('.position').value=item.position; box.querySelector('.font').value=item.font;
+    box.querySelectorAll('textarea,input,select').forEach(el => el.addEventListener('input', () => {
+      item.text=box.querySelector('.text-content').value; item.size=Math.max(12,Math.min(160,Number(box.querySelector('.size').value)||12));
+      item.weight=box.querySelector('.weight').value; item.color=box.querySelector('.color').value; item.align=box.querySelector('.align').value;
+      item.position=box.querySelector('.position').value; item.opacity=Number(box.querySelector('.opacity').value);
+      item.font=box.querySelector('.font').value; box.querySelector('.opacity-value').textContent=item.opacity+'%'; draw();
+    }));
+    box.querySelector('.remove-line').addEventListener('click', () => { const i=lines.findIndex(x=>x.id===id); if(i>=0) lines.splice(i,1); box.remove(); updateLineNumbers(); draw(); });
+    updateLineNumbers(); draw();
+  }
+  function updateLineNumbers(){ document.querySelectorAll('.linebox').forEach((el,i)=>el.querySelector('.line-number').textContent=`${i+1}`); }
+  $('add-line').addEventListener('click',()=>addLine());
+
+  function dimensionsForRatio(ratio, preview=false) {
+    const [rw,rh]=ratio.split(':').map(Number);
+    if(preview) { const h=1000; return [Math.round(h*rw/rh),h]; }
+    if (ratio==='9:20') return [1440,3200];
+    if (rw>=rh) return [Math.round(3200*rw/rh),3200];
+    return [1440,Math.round(1440*rh/rw)];
+  }
+  function wrapText(text, maxWidth, font) {
+    const paragraphs=String(text).split('\n'); const result=[];
+    for (const paragraph of paragraphs) {
+      if (!paragraph) { result.push(''); continue; }
+      const words=paragraph.split(/(\s+)/); let row='';
+      for (const word of words) {
+        const candidate=row+word;
+        if (row && ctx.measureText(candidate).width>maxWidth) { result.push(row); row=word.replace(/^\s+/, ''); }
+        else row=candidate;
+      }
+      result.push(row);
+    }
+    return result;
+  }
+  function draw() {
+    const ratio=$('ratio').value, [w,h]=dimensionsForRatio(ratio,true);
+    canvas.width=w; canvas.height=h; $('canvas-shell').style.aspectRatio=`${w} / ${h}`;
+    ctx.clearRect(0,0,w,h);
+    if (entries.full) {
+      const img=entries.full.img, scale=Math.max(w/img.naturalWidth,h/img.naturalHeight);
+      const sw=w/scale, sh=h/scale, sx=(img.naturalWidth-sw)/2, sy=(img.naturalHeight-sh)/2;
+      ctx.drawImage(img,sx,sy,sw,sh,0,0,w,h); $('canvas-empty').style.display='none';
+      const shade=ctx.createLinearGradient(0,0,0,h); shade.addColorStop(0,'rgba(0,0,0,.35)'); shade.addColorStop(.48,'rgba(0,0,0,0)'); shade.addColorStop(1,'rgba(0,0,0,.58)'); ctx.fillStyle=shade; ctx.fillRect(0,0,w,h);
+    } else {
+      const g=ctx.createLinearGradient(0,0,w,h); g.addColorStop(0,'#38334a');g.addColorStop(.55,'#17171e');g.addColorStop(1,'#755866');ctx.fillStyle=g;ctx.fillRect(0,0,w,h); $('canvas-empty').style.display='grid';
+    }
+    const pad=w*.09, maxWidth=w-pad*2;
+    for(const item of lines){
+      if(!item.text) continue;
+      const px=item.size*(w/450); const family=item.font==='serif'?'Georgia,"Noto Serif Bengali","Nirmala UI",serif':'system-ui,-apple-system,"Noto Sans Bengali","Nirmala UI",sans-serif';
+      ctx.font=`${item.weight} ${px}px ${family}`; ctx.textAlign=item.align; ctx.textBaseline='top'; ctx.fillStyle=item.color; ctx.globalAlpha=item.opacity/100;
+      ctx.shadowColor='rgba(0,0,0,.72)';ctx.shadowBlur=Math.max(2,px*.12);ctx.shadowOffsetX=0;ctx.shadowOffsetY=Math.max(1,px*.05);
+      const rows=wrapText(item.text,maxWidth,ctx.font), lineHeight=px*1.25, blockHeight=rows.length*lineHeight;
+      let y=item.position==='top'?h*.09:item.position==='center'?(h-blockHeight)/2:h*.91-blockHeight;
+      const x=item.align==='left'?pad:item.align==='right'?w-pad:w/2;
+      for(const row of rows){ctx.fillText(row,x,y,maxWidth);y+=lineHeight;}
+    }
+    ctx.globalAlpha=1;ctx.shadowColor='transparent';ctx.shadowBlur=0;ctx.shadowOffsetY=0;
+    $('preview-ratio').textContent=`${ratio} · ${ratioNames[ratio]}`;
+    $('dimensions').textContent=`Preview: ${w} × ${h}`;
+  }
+  $('ratio').addEventListener('change',draw);
+  $('export-format').addEventListener('change',()=>{$('export').textContent=$('export-format').value==='png'?'PNG download':'JPEG download';});
+  $('export').addEventListener('click',()=>{
+    if(!entries.full||!entries.face){setStatus('Export-এর আগে দুইটি reference-ই যোগ করুন।','error');return;}
+    const ratio=$('ratio').value,[w,h]=dimensionsForRatio(ratio,false),out=document.createElement('canvas');out.width=w;out.height=h;
+    const outCtx=out.getContext('2d'),img=entries.full.img,scale=Math.max(w/img.naturalWidth,h/img.naturalHeight),sw=w/scale,sh=h/scale;
+    outCtx.drawImage(img,(img.naturalWidth-sw)/2,(img.naturalHeight-sh)/2,sw,sh,0,0,w,h);
+    const shade=outCtx.createLinearGradient(0,0,0,h);shade.addColorStop(0,'rgba(0,0,0,.35)');shade.addColorStop(.48,'rgba(0,0,0,0)');shade.addColorStop(1,'rgba(0,0,0,.58)');outCtx.fillStyle=shade;outCtx.fillRect(0,0,w,h);
+    const factor=w/450,pad=w*.09,maxWidth=w-pad*2;
+    for(const item of lines){if(!item.text)continue;const px=item.size*factor,family=item.font==='serif'?'Georgia,"Noto Serif Bengali","Nirmala UI",serif':'system-ui,-apple-system,"Noto Sans Bengali","Nirmala UI",sans-serif';outCtx.font=`${item.weight} ${px}px ${family}`;outCtx.textAlign=item.align;outCtx.textBaseline='top';outCtx.fillStyle=item.color;outCtx.globalAlpha=item.opacity/100;outCtx.shadowColor='rgba(0,0,0,.72)';outCtx.shadowBlur=Math.max(2,px*.12);outCtx.shadowOffsetY=Math.max(1,px*.05);const rows=wrapTextWithContext(outCtx,item.text,maxWidth),lineHeight=px*1.25,blockHeight=rows.length*lineHeight;let y=item.position==='top'?h*.09:item.position==='center'?(h-blockHeight)/2:h*.91-blockHeight;const x=item.align==='left'?pad:item.align==='right'?w-pad:w/2;for(const row of rows){outCtx.fillText(row,x,y,maxWidth);y+=lineHeight;}}
+    outCtx.globalAlpha=1;outCtx.shadowColor='transparent';
+    const format=$('export-format').value,mime=format==='jpeg'?'image/jpeg':'image/png';
+    out.toBlob(blob=>{if(!blob){setStatus('Export তৈরি করা যায়নি। অন্য browser বা PNG format চেষ্টা করুন।','error');return;}const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`wallpaper-studio-${ratio.replace(':','x')}.${format==='jpeg'?'jpg':'png'}`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);setStatus(`Local ${format.toUpperCase()} export সম্পন্ন · প্রকৃত resolution ${w} × ${h} px।`,'success');},mime,format==='jpeg'?.94:undefined);
+  });
+  function wrapTextWithContext(context,text,maxWidth){const result=[];for(const paragraph of String(text).split('\n')){if(!paragraph){result.push('');continue;}const words=paragraph.split(/(\s+)/);let row='';for(const word of words){const candidate=row+word;if(row&&context.measureText(candidate).width>maxWidth){result.push(row);row=word.replace(/^\s+/,'');}else row=candidate;}result.push(row);}return result;}
+  addLine({text:'',size:52,position:'top'}); addLine({text:'',size:28,position:'bottom',weight:'400'});
+  draw();
+})();
+</script>
+</body>
+</html>
